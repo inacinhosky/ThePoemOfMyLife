@@ -229,8 +229,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -80, y: -34}
-  m_SizeDelta: {x: 160, y: 92.68}
+  m_AnchoredPosition: {x: -57.284973, y: -33.184998}
+  m_SizeDelta: {x: 114.57, y: 66.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &208082108
 MonoBehaviour:
@@ -326,6 +326,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208082106}
   m_CullTransparentMesh: 1
+--- !u!1 &241817109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 241817110}
+  - component: {fileID: 241817112}
+  - component: {fileID: 241817111}
+  m_Layer: 5
+  m_Name: Corredor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &241817110
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241817109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1852020224}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000015259, y: -0.000022888}
+  m_SizeDelta: {x: 800, y: 450}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &241817111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241817109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 8288426215254106694, guid: 3f208615fa663c54f85e35439df99228, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &241817112
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241817109}
+  m_CullTransparentMesh: 1
 --- !u!1 &310491026
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.00099182}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &310491028
@@ -389,15 +464,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textComponent: {fileID: 800960814}
   lines:
-  - aaaaaaaaaaaaaaaaaa
-  - bbbbbbbbbbbbbbbbb
-  - cccccccccccccccccc
-  - dddddddddddddddd
+  - "AURORA: \u201Cyawnn...\u201D "
+  - "M\xC3E/LICIA: \u201CAURORA? J\xE1 acordou, filha? O caf\xE9 ta pronto. Se quiser
+    comer ele quente, troca de roupa e vem logo!\u201D"
+  - "AURORA: \u201CT\xE1 bom m\xE3e! Eu j\xE1 t\xF4 indo, s\xF3 espera um pouco!!\u201D"
+  - "AURORA: \u201CAgora... Onde \xE9 que foi que eu deixei meu uniforme?\u201D"
+  - "LICIA/M\xC3E: \u201CTerminou de se arrumar? O almo\xE7o est\xE1 na geladeira,
+    e hoje eu fiz p\xE3o com ovo, n\xE3o tinha queijo j\xE1 que seu pai esqueceu
+    de comprar.\u201D"
+  - "AURORA: \u201CEntendi, o pai n\xE3o vem?\u201D"
+  - "M\xC3E: \u201CSeu pai n\xE3o vai poder tomar caf\xE9 com a gente hoje, ele n\xE3o
+    est\xE1 se sentindo muito bem, ent\xE3o deve ficar de cama.\u201D"
+  - "AURORA: \u201CPoxa.\u201D"
+  - "M\xC3E: \u201CEnfim, tenho que ir. N\xE3o esque\xE7a da lou\xE7a depois que
+    terminar e n\xE3o se atrase de novo\u201D"
+  - "AURORA: \u201CCerto. Bom trabalho.\u201D"
+  - "AURORA: \u201CEu deveria ir para a escola logo.\u201D"
+  - "MARISA: \u201CAurora!! Que bom te ver, tudo bem? Sabe o trabalho de portugu\xEAs?
+    Voc\xEA fez sobre o que?\u201D"
+  - "AURORA: \u201CSobre o mar\u201D"
+  - " MARISA: \u201CO mar? Hmmm...\u201D "
+  - "MARISA: \u201CMas o mar n\xE3o \xE9 muito simples?\u201D"
+  - "AURORA: \u201CSimples? N\xE3o, e mesmo que fosse, n\xE3o precisava ser muito
+    complexo.\u201D"
+  - "MARISA: \u201CN\xE3o...! N\xE3o digo complexo... digo, tipo, \xE9 muito sem
+    gra\xE7a.\u201D"
+  - "AURORA: \u201CE voc\xEA fez sobre o que, portadora da sabedoria?\u201D"
+  - "MARISA: \u201CGatinhos.\u201D"
+  - "AURORA: \u201C...\u201D"
+  - "AURORA: \u201C\xC9 mesmo?\u201D"
+  - "MARISA: \u201CSim. Eu fiz pensando na minha gatinha, a Luna.\u201D"
+  - "AURORA: \u201CFofo.\u201D "
+  - "MARISA: \u201CE voc\xEA? Por que o mar?\u201D"
+  - "AURORA: \u201CN\xE3o sei se tenho um motivo bom. Esse fim de semana eu fui na
+    praia com minha tia a noite, ver as estrelas, e ai eu acabei me inspirando.\u201D"
+  - "MARISA: \u201CPoxa vida nem me convida!\u201D"
+  - "AURORA: \u201CVoc\xEA n\xE3o poderia ir de qualquer forma\u201D"
+  - "MARISA: \u201CAwn. J\xE1 ta na hora? Poxa vida. Eu queria conversar mais.\u201D"
+  - "AURORA: \u201CA gente pode conversar depois, acho melhor a gente ir, n\xE3o
+    quero receber esporro\u201D"
   textSpeed: 0.02
   fadeOutAnimacao: {fileID: 930155518}
   fadeInAnimacao: {fileID: 1795003741}
   quarto: {fileID: 93878236}
   cozinha: {fileID: 1450721349}
+  corredor: {fileID: 241817109}
   caixaDialogo: {fileID: 1448602034}
   background: {fileID: 1542186977}
 --- !u!1 &800960812
@@ -434,7 +545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64.74, y: -61.637}
+  m_AnchoredPosition: {x: 67, y: -78}
   m_SizeDelta: {x: 437.48, y: 87.274}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800960814
@@ -634,6 +745,81 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1292990966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1292990967}
+  - component: {fileID: 1292990969}
+  - component: {fileID: 1292990968}
+  m_Layer: 5
+  m_Name: SalaAtras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1292990967
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292990966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1852020224}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000015259, y: -0.000022888}
+  m_SizeDelta: {x: 800, y: 450}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1292990968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292990966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 4113829005332862926, guid: 0503472d3655f6b4bb14709ee7bf3bd3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1292990969
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292990966}
+  m_CullTransparentMesh: 1
 --- !u!1 &1448602034
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -81.500015}
+  m_AnchoredPosition: {x: 0, y: -81.5}
   m_SizeDelta: {x: -102.00001, y: -157}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448602036
@@ -782,8 +968,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: -0.00096893}
-  m_SizeDelta: {x: 800, y: 367.55}
+  m_AnchoredPosition: {x: -0.000030518, y: 0.0009860992}
+  m_SizeDelta: {x: 800, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1542186977
 GameObject:
@@ -1267,6 +1453,8 @@ RectTransform:
   m_Children:
   - {fileID: 93878237}
   - {fileID: 1450721352}
+  - {fileID: 241817110}
+  - {fileID: 1292990967}
   - {fileID: 1795003742}
   - {fileID: 930155519}
   - {fileID: 310491027}
