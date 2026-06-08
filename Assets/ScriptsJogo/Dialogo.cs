@@ -13,6 +13,7 @@ public class Dialogo : MonoBehaviour
     public GameObject quarto;
     public GameObject cozinha;
     public GameObject corredor;
+    public GameObject salaAtras;
     public GameObject caixaDialogo;
     public GameObject background;
     private bool introducaoFeita = false;
@@ -54,6 +55,10 @@ void Update()
             else if (index == 10)
             {
                 StartCoroutine(TransicaoCena(cozinha, corredor));
+            }
+            else if (index == 28)
+            {
+                StartCoroutine(TransicaoCena(corredor, salaAtras));
             }
             else
             {
@@ -111,7 +116,6 @@ void Update()
     transicaoAcontecendo = true;
     fadeInAnimacao.SetActive(true);
     yield return new WaitForSeconds(2.5f);
-    Debug.Log("Cenário ta mudando");
     cenarioAtual.SetActive(false);
     novoCenario.SetActive(true);
     fadeOutAnimacao.SetActive(true);

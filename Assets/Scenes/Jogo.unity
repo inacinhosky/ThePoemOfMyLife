@@ -503,12 +503,20 @@ MonoBehaviour:
   - "MARISA: \u201CAwn. J\xE1 ta na hora? Poxa vida. Eu queria conversar mais.\u201D"
   - "AURORA: \u201CA gente pode conversar depois, acho melhor a gente ir, n\xE3o
     quero receber esporro\u201D"
+  - "AURORA: \u201C....\u201D"
+  - "MARISA: \u201CTudo bem?\u201D"
+  - "AURORA: \u201CTudo sim. Eu s\xF3 n\xE3o to a fim de apresentar\u201D"
+  - "MARISA: \u201CPor que voc\xEA n\xE3o fala para a professora?\u201D"
+  - "AURORA: \u201CEu n\xE3o acho que ela v\xE1 deixar.\u201D"
+  - "MARISA: \u201CFaz sentido\u201D"
+  - "MARISA: \u201CFaz sentido\u201D"
   textSpeed: 0.02
   fadeOutAnimacao: {fileID: 930155518}
   fadeInAnimacao: {fileID: 1795003741}
   quarto: {fileID: 93878236}
   cozinha: {fileID: 1450721349}
   corredor: {fileID: 241817109}
+  salaAtras: {fileID: 1292990966}
   caixaDialogo: {fileID: 1448602034}
   background: {fileID: 1542186977}
 --- !u!1 &800960812
