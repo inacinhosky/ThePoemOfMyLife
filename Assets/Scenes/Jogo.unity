@@ -509,7 +509,15 @@ MonoBehaviour:
   - "MARISA: \u201CPor que voc\xEA n\xE3o fala para a professora?\u201D"
   - "AURORA: \u201CEu n\xE3o acho que ela v\xE1 deixar.\u201D"
   - "MARISA: \u201CFaz sentido\u201D"
-  - "MARISA: \u201CFaz sentido\u201D"
+  - "MARISA: \u201CMas, ent\xE3o, por que voc\xEA n\xE3o apresenta?\u201D"
+  - "AURORA: \u201CN\xE3o me sinto confort\xE1vel l\xE1 na frente\u201D"
+  - "MARISA: \u201CAhh... Sei como \xE9\u201D"
+  - "MARISA: \u201CPor que voc\xEA n\xE3o tenta olhar para as testas das pessoas
+    ou fingir que n\xE3o est\xE3o ali, tipo, tenta imaginar que s\xE3o apenas pel\xFAcias,
+    objetos\u201D"
+  - "AURORA: \u201C\xC9 uma boa. Mas n\xE3o sei se to com f\xE9 nisso n\xE3o\u201D"
+  - "MARISA: \u201CPode confia!\u201D"
+  - "PROFESSORA: \u201CSua vez, Aurora.\u201D"
   textSpeed: 0.02
   fadeOutAnimacao: {fileID: 930155518}
   fadeInAnimacao: {fileID: 1795003741}
@@ -517,8 +525,84 @@ MonoBehaviour:
   cozinha: {fileID: 1450721349}
   corredor: {fileID: 241817109}
   salaAtras: {fileID: 1292990966}
+  salaFrente: {fileID: 598893138}
   caixaDialogo: {fileID: 1448602034}
   background: {fileID: 1542186977}
+--- !u!1 &598893138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 598893141}
+  - component: {fileID: 598893140}
+  - component: {fileID: 598893139}
+  m_Layer: 5
+  m_Name: SalaFrente
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &598893139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598893138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1232628593329238979, guid: fb2c8a89522cbb345be8fbc4b107cc06, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &598893140
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598893138}
+  m_CullTransparentMesh: 1
+--- !u!224 &598893141
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598893138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1852020224}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000091553, y: 0.00047302}
+  m_SizeDelta: {x: 800, y: 450}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &800960812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,6 +1547,7 @@ RectTransform:
   - {fileID: 1450721352}
   - {fileID: 241817110}
   - {fileID: 1292990967}
+  - {fileID: 598893141}
   - {fileID: 1795003742}
   - {fileID: 930155519}
   - {fileID: 310491027}

@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class Dialogo : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Dialogo : MonoBehaviour
     public GameObject cozinha;
     public GameObject corredor;
     public GameObject salaAtras;
+    public GameObject salaFrente;
     public GameObject caixaDialogo;
     public GameObject background;
     private bool introducaoFeita = false;
@@ -25,6 +27,7 @@ public class Dialogo : MonoBehaviour
         fadeOutAnimacao.SetActive(false);
         fadeInAnimacao.SetActive(false);
         quarto.SetActive(false);
+        index = 27;
     }
 
 void Update()
@@ -59,6 +62,10 @@ void Update()
             else if (index == 28)
             {
                 StartCoroutine(TransicaoCena(corredor, salaAtras));
+            }
+            else if (index == 41)
+            {
+                StartCoroutine(TransicaoCena(salaAtras, salaFrente));
             }
             else
             {
