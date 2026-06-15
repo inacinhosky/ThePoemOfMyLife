@@ -1,0 +1,294 @@
+fileFormatVersion: 2
+guid: 42fee60c924a9b744a239c76c55c434b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5619079498073473535
+    second: Pitaya_0
+  - first:
+      213: 1157126191657734194
+    second: Pitaya_1
+  - first:
+      213: -8755775085428430164
+    second: Pitaya_2
+  - first:
+      213: -7139775276478674107
+    second: Pitaya_3
+  - first:
+      213: 5637367457426236644
+    second: Pitaya_4
+  - first:
+      213: -1980993844014168216
+    second: Pitaya_5
+  - first:
+      213: -3822231855422393999
+    second: Pitaya_6
+  - first:
+      213: -9042586501861921809
+    second: Pitaya_7
+  - first:
+      213: 7569591144874363689
+    second: Pitaya_8
+  - first:
+      213: -1945959579278920425
+    second: Pitaya_9
+  - first:
+      213: 1874933746457908673
+    second: Pitaya_10
+  - first:
+      213: 5700053572071184977
+    second: Pitaya_11
+  - first:
+      213: 6995903834533622700
+    second: Pitaya_12
+  - first:
+      213: -5330255460312776535
+    second: Pitaya_13
+  - first:
+      213: 5926984725757786848
+    second: Pitaya_14
+  - first:
+      213: -3219417607713480759
+    second: Pitaya_15
+  - first:
+      213: 2080818497506981535
+    second: Pitaya_16
+  - first:
+      213: 1452752873028976095
+    second: Pitaya_17
+  - first:
+      213: 1039379278229057817
+    second: Pitaya_18
+  - first:
+      213: -7221696444118695251
+    second: Pitaya_19
+  - first:
+      213: 8847094233604649025
+    second: Pitaya_20
+  - first:
+      213: 370823932670223317
+    second: Pitaya_21
+  - first:
+      213: 2108768535020669855
+    second: Pitaya_22
+  - first:
+      213: -5678795577629967422
+    second: Pitaya_23
+  - first:
+      213: 5196127307615347818
+    second: Pitaya_24
+  - first:
+      213: 1723713131830061947
+    second: Pitaya_25
+  - first:
+      213: 8185649728053655105
+    second: Pitaya_26
+  - first:
+      213: 2221280717665958347
+    second: Pitaya_27
+  - first:
+      213: 1472442042390578481
+    second: Pitaya_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pitaya_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 111
+        width: 2273
+        height: 2382
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caaa2db23fc3d7680800000000000000
+      internalID: -8755775085428430164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d11c695b7d12bad4582302c867acc5ed
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pitaya_0: 5619079498073473535
+      Pitaya_1: 1157126191657734194
+      Pitaya_10: 1874933746457908673
+      Pitaya_11: 5700053572071184977
+      Pitaya_12: 6995903834533622700
+      Pitaya_13: -5330255460312776535
+      Pitaya_14: 5926984725757786848
+      Pitaya_15: -3219417607713480759
+      Pitaya_16: 2080818497506981535
+      Pitaya_17: 1452752873028976095
+      Pitaya_18: 1039379278229057817
+      Pitaya_19: -7221696444118695251
+      Pitaya_2: -8755775085428430164
+      Pitaya_20: 8847094233604649025
+      Pitaya_21: 370823932670223317
+      Pitaya_22: 2108768535020669855
+      Pitaya_23: -5678795577629967422
+      Pitaya_24: 5196127307615347818
+      Pitaya_25: 1723713131830061947
+      Pitaya_26: 8185649728053655105
+      Pitaya_27: 2221280717665958347
+      Pitaya_28: 1472442042390578481
+      Pitaya_3: -7139775276478674107
+      Pitaya_4: 5637367457426236644
+      Pitaya_5: -1980993844014168216
+      Pitaya_6: -3822231855422393999
+      Pitaya_7: -9042586501861921809
+      Pitaya_8: 7569591144874363689
+      Pitaya_9: -1945959579278920425
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

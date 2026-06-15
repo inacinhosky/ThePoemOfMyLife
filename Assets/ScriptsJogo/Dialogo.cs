@@ -27,7 +27,6 @@ public class Dialogo : MonoBehaviour
         fadeOutAnimacao.SetActive(false);
         fadeInAnimacao.SetActive(false);
         quarto.SetActive(false);
-        index = 27;
     }
 
 void Update()
