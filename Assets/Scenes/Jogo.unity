@@ -624,6 +624,7 @@ MonoBehaviour:
   - "PROFESSORA: \u201CSua vez, Aurora.\u201D"
   - Fim.
   - finalmente...
+  - aaaaaaaaaaaaa
   textSpeed: 0.02
   fadeOutAnimacao: {fileID: 930155518}
   fadeInAnimacao: {fileID: 1795003741}
@@ -688,6 +689,7 @@ MonoBehaviour:
   dialogo: {fileID: 310491029}
   pessoasTotal: 0
   pessoasFrutas: 0
+  gameController: {fileID: 581550987}
 --- !u!1001 &584256628
 PrefabInstance:
   m_ObjectHideFlags: 0
