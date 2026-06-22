@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class TesteMinigame1 : MonoBehaviour
 {
+    private bool jaVirouFruta = false;
     public GameControllerMinigame gameControllerMinigame;
     public SpriteRenderer frutaSpriteRenderer;
     public Sprite[] frutas;
@@ -17,6 +18,11 @@ public class TesteMinigame1 : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        if (jaVirouFruta)
+        {
+            return;
+        }
+        jaVirouFruta = true;
         gameControllerMinigame.clicouNaPessoa();
         frutaSpriteRenderer.sprite = frutas[Random.Range(0, frutas.Length)];
     }

@@ -52,19 +52,24 @@ void Update()
             }
             else if (index == 3)
             {
-                StartCoroutine(TransicaoCena(quarto, cozinha));
+                StartCoroutine(TransicaoCena(quarto, cozinha, true));
+
             }
             else if (index == 10)
             {
-                StartCoroutine(TransicaoCena(cozinha, corredor));
+                StartCoroutine(TransicaoCena(cozinha, corredor, true));
+
             }
             else if (index == 28)
             {
-                StartCoroutine(TransicaoCena(corredor, salaAtras));
+                StartCoroutine(TransicaoCena(corredor, salaAtras, true));
+
             }
-            else if (index == 41)
+            else if (index == 39)
             {
-                StartCoroutine(TransicaoCena(salaAtras, salaFrente));
+                StartCoroutine(TransicaoCena(salaAtras, salaFrente, false));
+                
+                GetComponent<Dialogo>().enabled = false;
             }
             else
             {
@@ -116,21 +121,32 @@ void Update()
             gameObject.SetActive(false);
         }
     }
-    IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario) // corrotina usada sempre que for mudar de um cenário para o outro
-    {
+IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool mostrarDialogoDepois)
+{
     caixaDialogo.SetActive(false);
+
     transicaoAcontecendo = true;
     fadeInAnimacao.SetActive(true);
+
     yield return new WaitForSeconds(2.5f);
+
     cenarioAtual.SetActive(false);
     novoCenario.SetActive(true);
+
     fadeOutAnimacao.SetActive(true);
     fadeInAnimacao.SetActive(false);
+
     yield return new WaitForSeconds(2.5f);
+
     NextLine();
+
     transicaoAcontecendo = false;
     fadeInAnimacao.SetActive(false);
     fadeOutAnimacao.SetActive(false);
-    caixaDialogo.SetActive(true);
+
+    if (mostrarDialogoDepois)
+    {
+        caixaDialogo.SetActive(true);
     }
+}
 }
