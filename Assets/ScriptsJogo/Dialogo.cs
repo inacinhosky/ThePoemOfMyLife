@@ -50,7 +50,7 @@ void Update()
                 introducaoFeita = true;
                 StartCoroutine(Introdução());
             }
-            else if (index == 3)
+            else if (index == 3) // mudar para 3 depois
             {
                 StartCoroutine(TransicaoCena(quarto, cozinha, true));
 
@@ -65,11 +65,16 @@ void Update()
                 StartCoroutine(TransicaoCena(corredor, salaAtras, true));
 
             }
-            else if (index == 39)
+            else if (index == 41) 
             {
                 StartCoroutine(TransicaoCena(salaAtras, salaFrente, false));
                 
-                GetComponent<Dialogo>().enabled = false;
+                enabled = false;
+            }
+            else if (index == 43) 
+            {
+                enabled = true;
+                StartCoroutine(TransicaoCena(salaFrente, salaAtras, true));
             }
             else
             {
@@ -149,4 +154,10 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
         caixaDialogo.SetActive(true);
     }
 }
+    public void continuarDialogo()
+    {
+        caixaDialogo.SetActive(true);
+        enabled = true;
+        NextLine();
+    }
 }

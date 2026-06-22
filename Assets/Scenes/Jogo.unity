@@ -623,6 +623,7 @@ MonoBehaviour:
   - "MARISA: \u201CPode confia!\u201D"
   - "PROFESSORA: \u201CSua vez, Aurora.\u201D"
   - Fim.
+  - finalmente...
   textSpeed: 0.02
   fadeOutAnimacao: {fileID: 930155518}
   fadeInAnimacao: {fileID: 1795003741}
@@ -684,6 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab18a5e0b5a10eb49a8803b56fdacbe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameControllerMinigame
+  dialogo: {fileID: 310491029}
   pessoasTotal: 0
   pessoasFrutas: 0
 --- !u!1001 &584256628

@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class GameControllerMinigame : MonoBehaviour
 {
+    public Dialogo dialogo;
     public int pessoasTotal;
     public int pessoasFrutas;
+    public GameObject gameController;
     void Start()
     {
         pessoasTotal = transform.childCount;
@@ -19,7 +21,10 @@ public class GameControllerMinigame : MonoBehaviour
         pessoasFrutas++;
         if (pessoasFrutas == pessoasTotal)
         {
+
             Debug.Log("Ganhou");
+            dialogo.continuarDialogo();
+            gameController.SetActive(false);
         }    
     }
 }
