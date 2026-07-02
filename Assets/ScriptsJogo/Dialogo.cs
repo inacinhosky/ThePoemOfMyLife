@@ -6,9 +6,12 @@ using System;
 public class Dialogo : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
+    public TextMeshProUGUI personagemFalandoComponent;
     public string[] lines;
+    public string[] personagemFalando;
     public float textSpeed;
     private int index;
+    private int indexPersonagem;
     public GameObject fadeOutAnimacao;
     public GameObject fadeInAnimacao;
     public GameObject quarto;
@@ -27,6 +30,7 @@ public class Dialogo : MonoBehaviour
         fadeOutAnimacao.SetActive(false);
         fadeInAnimacao.SetActive(false);
         quarto.SetActive(false);
+        personagemFalandoComponent.text = string.Empty;
     }
 
 void Update()
@@ -50,7 +54,7 @@ void Update()
                 introducaoFeita = true;
                 StartCoroutine(Introdução());
             }
-            else if (index == 3) // mudar para 3 depois
+            else if (index == 3)
             {
                 StartCoroutine(TransicaoCena(quarto, cozinha, true));
 
@@ -71,7 +75,7 @@ void Update()
                 
                 enabled = false;
             }
-            else if (index == 43) 
+            else if (index == 43) // lembrar de botar o som de palmas nesses 3 pontinhos. 
             {
                 enabled = true;
                 StartCoroutine(TransicaoCena(salaFrente, salaAtras, true));
@@ -91,7 +95,9 @@ void Update()
     void StartDialogue()
     {
         index = 0;
+        indexPersonagem = 0;
         StartCoroutine(TypeLine());
+        StartCoroutine(TypeLine2());
     }
     IEnumerator TypeLine() // transforma as frases em caracteres para que tenha o efeito de ir de letra por letra dentro do dialogo.
     {
@@ -101,6 +107,15 @@ void Update()
             yield return new WaitForSeconds(textSpeed);
         }
     }
+        IEnumerator TypeLine2() // transforma as frases em caracteres para que tenha o efeito de ir de letra por letra dentro do dialogo.
+    {
+        foreach (char c in personagemFalando[indexPersonagem].ToCharArray())
+        {
+            personagemFalandoComponent.text += c;
+            yield return new WaitForSeconds(textSpeed);
+        }
+    }
+
     IEnumerator Introdução() // Corrotina para o inicio de tela preta.
     {
         transicaoAcontecendo = true;
@@ -120,6 +135,19 @@ void Update()
             index++;
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
+    }
+        void NextLinePersonagemFalando() // função feita para ir para a próxima linha
+    {
+        if (indexPersonagem < personagemFalando.Length - 1)
+        {
+            indexPersonagem++;
+            personagemFalandoComponent.text = string.Empty;
+            StartCoroutine(TypeLine2());
         }
         else
         {
