@@ -194,6 +194,156 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93878236}
   m_CullTransparentMesh: 1
+--- !u!1 &197496050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197496051}
+  - component: {fileID: 197496053}
+  - component: {fileID: 197496052}
+  - component: {fileID: 197496054}
+  m_Layer: 5
+  m_Name: TimerTxT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &197496051
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197496050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 598893141}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -281, y: 185}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &197496052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197496050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &197496053
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197496050}
+  m_CullTransparentMesh: 1
+--- !u!114 &197496054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197496050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143782fcebe764b489d105b2edca967c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Timer
+  timer: 10
 --- !u!1 &208082106
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +589,7 @@ PrefabInstance:
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[2]'
       value: 
-      objectReference: {fileID: -8755775085428430164, guid: 42fee60c924a9b744a239c76c55c434b, type: 3}
+      objectReference: {fileID: 21300000, guid: 42fee60c924a9b744a239c76c55c434b, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: gameControllerMinigame
       value: 
@@ -569,60 +719,56 @@ MonoBehaviour:
   textComponent: {fileID: 800960814}
   personagemFalandoComponent: {fileID: 1343114455}
   lines:
-  - "AURORA: \u201Cyawnn...\u201D "
-  - "M\xC3E/LICIA: \u201CAURORA? J\xE1 acordou, filha? O caf\xE9 ta pronto. Se quiser
-    comer ele quente, troca de roupa e vem logo!\u201D"
-  - "AURORA: \u201CT\xE1 bom m\xE3e! Eu j\xE1 t\xF4 indo, s\xF3 espera um pouco!!\u201D"
-  - "AURORA: \u201CAgora... Onde \xE9 que foi que eu deixei meu uniforme?\u201D"
-  - "LICIA/M\xC3E: \u201CTerminou de se arrumar? O almo\xE7o est\xE1 na geladeira,
-    e hoje eu fiz p\xE3o com ovo, n\xE3o tinha queijo j\xE1 que seu pai esqueceu
-    de comprar.\u201D"
-  - "AURORA: \u201CEntendi, o pai n\xE3o vem?\u201D"
-  - "M\xC3E: \u201CSeu pai n\xE3o vai poder tomar caf\xE9 com a gente hoje, ele n\xE3o
-    est\xE1 se sentindo muito bem, ent\xE3o deve ficar de cama.\u201D"
-  - "AURORA: \u201CPoxa.\u201D"
-  - "M\xC3E: \u201CEnfim, tenho que ir. N\xE3o esque\xE7a da lou\xE7a depois que
-    terminar e n\xE3o se atrase de novo\u201D"
-  - "AURORA: \u201CCerto. Bom trabalho.\u201D"
-  - "AURORA: \u201CEu deveria ir para a escola logo.\u201D"
-  - "MARISA: \u201CAurora!! Que bom te ver, tudo bem? Sabe o trabalho de portugu\xEAs?
-    Voc\xEA fez sobre o que?\u201D"
-  - "AURORA: \u201CSobre o mar\u201D"
-  - " MARISA: \u201CO mar? Hmmm...\u201D "
-  - "MARISA: \u201CMas o mar n\xE3o \xE9 muito simples?\u201D"
-  - "AURORA: \u201CSimples? N\xE3o, e mesmo que fosse, n\xE3o precisava ser muito
-    complexo.\u201D"
-  - "MARISA: \u201CN\xE3o...! N\xE3o digo complexo... digo, tipo, \xE9 muito sem
-    gra\xE7a.\u201D"
-  - "AURORA: \u201CE voc\xEA fez sobre o que, portadora da sabedoria?\u201D"
-  - "MARISA: \u201CGatinhos.\u201D"
-  - "AURORA: \u201C...\u201D"
-  - "AURORA: \u201C\xC9 mesmo?\u201D"
-  - "MARISA: \u201CSim. Eu fiz pensando na minha gatinha, a Luna.\u201D"
-  - "AURORA: \u201CFofo.\u201D "
-  - "MARISA: \u201CE voc\xEA? Por que o mar?\u201D"
-  - "AURORA: \u201CN\xE3o sei se tenho um motivo bom. Esse fim de semana eu fui na
-    praia com minha tia a noite, ver as estrelas, e ai eu acabei me inspirando.\u201D"
-  - "MARISA: \u201CPoxa vida nem me convida!\u201D"
-  - "AURORA: \u201CVoc\xEA n\xE3o poderia ir de qualquer forma\u201D"
-  - "MARISA: \u201CAwn. J\xE1 ta na hora? Poxa vida. Eu queria conversar mais.\u201D"
-  - "AURORA: \u201CA gente pode conversar depois, acho melhor a gente ir, n\xE3o
-    quero receber esporro\u201D"
-  - "AURORA: \u201C....\u201D"
-  - "MARISA: \u201CTudo bem?\u201D"
-  - "AURORA: \u201CTudo sim. Eu s\xF3 n\xE3o to a fim de apresentar\u201D"
-  - "MARISA: \u201CPor que voc\xEA n\xE3o fala para a professora?\u201D"
-  - "AURORA: \u201CEu n\xE3o acho que ela v\xE1 deixar.\u201D"
-  - "MARISA: \u201CFaz sentido\u201D"
-  - "MARISA: \u201CMas, ent\xE3o, por que voc\xEA n\xE3o apresenta?\u201D"
-  - "AURORA: \u201CN\xE3o me sinto confort\xE1vel l\xE1 na frente\u201D"
-  - "MARISA: \u201CAhh... Sei como \xE9\u201D"
-  - "MARISA: \u201CPor que voc\xEA n\xE3o tenta olhar para as testas das pessoas
-    ou fingir que n\xE3o est\xE3o ali, tipo, tenta imaginar que s\xE3o apenas pel\xFAcias,
-    objetos\u201D"
-  - "AURORA: \u201C\xC9 uma boa. Mas n\xE3o sei se to com f\xE9 nisso n\xE3o\u201D"
-  - "MARISA: \u201CPode confia!\u201D"
-  - "PROFESSORA: \u201CSua vez, Aurora.\u201D"
+  - yawnn...
+  - "AURORA? J\xE1 acordou, filha? O caf\xE9 ta pronto. Se quiser comer ele quente,
+    troca de roupa e vem logo!"
+  - "T\xE1 bom m\xE3e! Eu j\xE1 t\xF4 indo, s\xF3 espera um pouco!!"
+  - "Agora... Onde \xE9 que foi que eu deixei meu uniforme?"
+  - "Terminou de se arrumar? O almo\xE7o est\xE1 na geladeira, e hoje eu fiz p\xE3o
+    com ovo, n\xE3o tinha queijo j\xE1 que seu pai esqueceu de comprar."
+  - "Entendi, o pai n\xE3o vem?"
+  - "Seu pai n\xE3o vai poder tomar caf\xE9 com a gente hoje, ele n\xE3o est\xE1
+    se sentindo muito bem, ent\xE3o deve ficar de cama."
+  - Poxa.
+  - "Enfim, tenho que ir. N\xE3o esque\xE7a da lou\xE7a depois que terminar e n\xE3o
+    se atrase de novo"
+  - Certo. Bom trabalho.
+  - Eu deveria ir para a escola logo.
+  - "Aurora!! Que bom te ver, tudo bem? Sabe o trabalho de portugu\xEAs? Voc\xEA
+    fez sobre o que?"
+  - Sobre o mar
+  - O mar? Hmmm...
+  - "Mas o mar n\xE3o \xE9 muito simples?"
+  - "Simples? N\xE3o, e mesmo que fosse, n\xE3o precisava ser muito complexo."
+  - "N\xE3o...! N\xE3o digo complexo... digo, tipo, \xE9 muito sem gra\xE7a."
+  - "E voc\xEA fez sobre o que, portadora da sabedoria?"
+  - Gatinhos.
+  - ...
+  - "\xC9 mesmo?"
+  - Sim. Eu fiz pensando na minha gatinha, a Luna.
+  - Fofo.
+  - "E voc\xEA? Por que o mar?"
+  - "N\xE3o sei se tenho um motivo bom. Esse fim de semana eu fui na praia com minha
+    tia a noite, ver as estrelas, e ai eu acabei me inspirando."
+  - Poxa vida nem me convida!
+  - "Voc\xEA n\xE3o poderia ir de qualquer forma"
+  - "Awn. J\xE1 ta na hora? Poxa vida. Eu queria conversar mais."
+  - "A gente pode conversar depois, acho melhor a gente ir, n\xE3o quero receber
+    esporro"
+  - ....
+  - Tudo bem?
+  - "Tudo sim. Eu s\xF3 n\xE3o to a fim de apresentar"
+  - "Por que voc\xEA n\xE3o fala para a professora?"
+  - "Eu n\xE3o acho que ela v\xE1 deixar."
+  - Faz sentido
+  - "Mas, ent\xE3o, por que voc\xEA n\xE3o apresenta?"
+  - "N\xE3o me sinto confort\xE1vel l\xE1 na frente"
+  - "Ahh... Sei como \xE9"
+  - "Por que voc\xEA n\xE3o tenta olhar para as testas das pessoas ou fingir que
+    n\xE3o est\xE3o ali, tipo, tenta imaginar que s\xE3o apenas pel\xFAcias, objetos"
+  - "\xC9 uma boa. Mas n\xE3o sei se to com f\xE9 nisso n\xE3o"
+  - Pode confia!
+  - Sua vez, Aurora.
   - Fim.
   - finalmente...
   - aaaaaaaaaaaaa
@@ -630,45 +776,45 @@ MonoBehaviour:
   - AURORA
   - "M\xC3E"
   - AURORA
-  - aaaaaa
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 01
-  - 9
-  - 123
-  - 412
-  - 532
-  - 432
-  - 565
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
-  - aaaaaa
+  - AURORA
+  - "M\xC3E"
+  - AURORA
+  - "M\xC3E"
+  - AURORA
+  - "M\xC3E"
+  - AURORA
+  - AURORA
+  - MARISA
+  - AURORA
+  - MARISA
+  - MARISA
+  - AURORA
+  - MARISA
+  - AURORA
+  - MARISA
+  - AURORA
+  - AURORA
+  - MARISA
+  - AURORA
+  - MARISA
+  - AURORA
+  - MARISA
+  - AURORA
+  - MARISA
+  - AURORA
+  - AURORA
+  - MARISA
+  - AURORA
+  - MARISA
+  - AURORA
+  - MARISA
+  - MARISA
+  - AURORA
+  - MARISA
+  - MARISA
+  - AURORA
+  - MARISA
+  - PROFESSORA
   - aaaaaa
   - aaaaaa
   - aaaaaa
@@ -737,6 +883,7 @@ MonoBehaviour:
   pessoasTotal: 0
   pessoasFrutas: 0
   gameController: {fileID: 581550987}
+  Timer: {fileID: 197496050}
 --- !u!1001 &584256628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -760,7 +907,7 @@ PrefabInstance:
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[2]'
       value: 
-      objectReference: {fileID: -8755775085428430164, guid: 42fee60c924a9b744a239c76c55c434b, type: 3}
+      objectReference: {fileID: 21300000, guid: 42fee60c924a9b744a239c76c55c434b, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: gameControllerMinigame
       value: 
@@ -895,6 +1042,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 581550988}
+  - {fileID: 197496051}
   m_Father: {fileID: 1852020224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1273,7 +1421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: za
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1375,7 +1523,7 @@ PrefabInstance:
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[2]'
       value: 
-      objectReference: {fileID: -8755775085428430164, guid: 42fee60c924a9b744a239c76c55c434b, type: 3}
+      objectReference: {fileID: 21300000, guid: 42fee60c924a9b744a239c76c55c434b, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: gameControllerMinigame
       value: 

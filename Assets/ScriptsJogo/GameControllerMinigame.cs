@@ -6,6 +6,7 @@ public class GameControllerMinigame : MonoBehaviour
     public int pessoasTotal;
     public int pessoasFrutas;
     public GameObject gameController;
+    public GameObject Timer;
     void Start()
     {
         pessoasTotal = transform.childCount;
@@ -25,6 +26,7 @@ public class GameControllerMinigame : MonoBehaviour
             Debug.Log("Ganhou");
             dialogo.continuarDialogo();
             gameController.SetActive(false);
+            Timer.SetActive(false);
         }    
     }
 }

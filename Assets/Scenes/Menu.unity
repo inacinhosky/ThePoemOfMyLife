@@ -283,9 +283,9 @@ AudioSource:
   m_GameObject: {fileID: 137629231}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: a037e9c61d8f72247bc60438aa82bb60, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 076cb33da5f83164d8c8595d3f86faba, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9fb512a6be06be04c87dbe794a01c96f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -688,7 +688,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: a037e9c61d8f72247bc60438aa82bb60, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 2deca0bdbbf71a844b67eb5c9b355f0c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 695fcb85501c59945bb8331386c2861a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.144
   m_Pitch: 1
@@ -1004,7 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Bot\xF5esMenu"
   audioSource: {fileID: 137629235}
-  hoverSound: {fileID: 8300000, guid: 076cb33da5f83164d8c8595d3f86faba, type: 3}
+  hoverSound: {fileID: 8300000, guid: 9fb512a6be06be04c87dbe794a01c96f, type: 3}
 --- !u!1 &657282313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,7 +1601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Bot\xF5esMenu"
   audioSource: {fileID: 137629235}
-  hoverSound: {fileID: 8300000, guid: 076cb33da5f83164d8c8595d3f86faba, type: 3}
+  hoverSound: {fileID: 8300000, guid: 9fb512a6be06be04c87dbe794a01c96f, type: 3}
 --- !u!1 &1034666934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,7 +1851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Bot\xF5esMenu"
   audioSource: {fileID: 137629235}
-  hoverSound: {fileID: 8300000, guid: 076cb33da5f83164d8c8595d3f86faba, type: 3}
+  hoverSound: {fileID: 8300000, guid: 9fb512a6be06be04c87dbe794a01c96f, type: 3}
 --- !u!1 &1233568686
 GameObject:
   m_ObjectHideFlags: 0
@@ -7257,7 +7257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Bot\xF5esMenu"
   audioSource: {fileID: 137629235}
-  hoverSound: {fileID: 8300000, guid: 076cb33da5f83164d8c8595d3f86faba, type: 3}
+  hoverSound: {fileID: 8300000, guid: 9fb512a6be06be04c87dbe794a01c96f, type: 3}
 --- !u!1 &2100451996
 GameObject:
   m_ObjectHideFlags: 0
