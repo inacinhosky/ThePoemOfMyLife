@@ -83,6 +83,7 @@ void Update()
             else
             {
                 NextLine();
+                NextLinePersonagemFalando();
             }
         }
         else
@@ -124,6 +125,7 @@ void Update()
         fadeOutAnimacao.SetActive(true);
         yield return new WaitForSeconds(2.5f);
         NextLine();
+        NextLinePersonagemFalando();
         transicaoAcontecendo = false;
         fadeOutAnimacao.SetActive(false);
     }
@@ -172,6 +174,7 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
     yield return new WaitForSeconds(2.5f);
 
     NextLine();
+    NextLinePersonagemFalando();
 
     transicaoAcontecendo = false;
     fadeInAnimacao.SetActive(false);
