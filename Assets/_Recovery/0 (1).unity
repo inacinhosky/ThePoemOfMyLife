@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Bot\xF5esMenu"
   audioSource: {fileID: 1748699600}
-  hoverSound: {fileID: 8300000, guid: 076cb33da5f83164d8c8595d3f86faba, type: 3}
+  hoverSound: {fileID: 8300000, guid: 9fb512a6be06be04c87dbe794a01c96f, type: 3}
 --- !u!1 &241817109
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,17 +769,9 @@ MonoBehaviour:
   - "\xC9 uma boa. Mas n\xE3o sei se to com f\xE9 nisso n\xE3o"
   - Pode confia!
   - Sua vez, Aurora.
+  - Fim.
   - finalmente...
-  - "Perfeito! Pode se sentar, mas ser\xE1 que eu posso conversar com voc\xEA depois?"
-  - Ahn? Claro
-  - "Licen\xE7a, voc\xEA queria falar comigo?"
-  - Ah, sim, se sente, por favor
-  - "Seu poema ficou muito bom, n\xE3o est\xE1 interessada em participar de um Slam?
-    Seus poemas est\xE3o muito lindos e participar de um seria uma \xF3tima oportunidade
-    para mostrar"
-  - "N\xE3o tenho certeza."
-  - "\xC9 mesmo? Mas s\xE3o t\xE3o lindos, pense um pouco a respeito"
-  - Certo..
+  - aaaaaaaaaaaaa
   personagemFalando:
   - AURORA
   - "M\xC3E"
@@ -823,15 +815,9 @@ MonoBehaviour:
   - AURORA
   - MARISA
   - PROFESSORA
-  - PROFESSORA
-  - AURORA
-  - AURORA
-  - PROFESSORA
-  - PROFESSORA
-  - AURORA
-  - PROFESSORA
-  - AURORA
-  - PROFESSORA
+  - aaaaaa
+  - aaaaaa
+  - aaaaaa
   textSpeed: 0.02
   fadeOutAnimacao: {fileID: 930155518}
   fadeInAnimacao: {fileID: 1795003741}
@@ -1098,8 +1084,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 67, y: -78}
-  m_SizeDelta: {x: 437.48, y: 87.274}
+  m_AnchoredPosition: {x: 6.44, y: -22.72}
+  m_SizeDelta: {x: 648.35, y: 110.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800960814
 MonoBehaviour:
@@ -1148,8 +1134,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1412,8 +1398,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -128.65, y: -0.0000021458}
-  m_SizeDelta: {x: 257.3, y: 28.76}
+  m_AnchoredPosition: {x: -196.78, y: 63}
+  m_SizeDelta: {x: 281.75, y: 28.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1343114455
 MonoBehaviour:
@@ -1435,7 +1421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: COMIC SANS
+  m_text: za
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1639,8 +1625,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -81.5}
-  m_SizeDelta: {x: -102.00001, y: -157}
+  m_AnchoredPosition: {x: 9, y: -139}
+  m_SizeDelta: {x: -102, y: -272}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448602036
 MonoBehaviour:
@@ -1662,7 +1648,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -855298285791758126, guid: 7837c7ad2163dc34e9c4e7c42cb2d050, type: 3}
+  m_Sprite: {fileID: 1366593600334314756, guid: fba01f71f566f874f8d3e23213daec36, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1993,11 +1979,11 @@ AudioSource:
   m_GameObject: {fileID: 1748699599}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: a037e9c61d8f72247bc60438aa82bb60, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 076cb33da5f83164d8c8595d3f86faba, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9fb512a6be06be04c87dbe794a01c96f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.294
   m_Pitch: 1
   Loop: 1
   Mute: 0

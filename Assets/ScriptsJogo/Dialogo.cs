@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEditor.Experimental.GraphView;
 
 public class Dialogo : MonoBehaviour
 {
@@ -73,18 +74,23 @@ void Update()
             {
                 StartCoroutine(TransicaoCena(salaAtras, salaFrente, false));
                 
-                enabled = false;
+
             }
-            else if (index == 43) // lembrar de botar o som de palmas nesses 3 pontinhos. 
+            else if (index == 44) // lembrar de botar o som de palmas nesses 3 pontinhos. 
             {
-                enabled = true;
+
                 StartCoroutine(TransicaoCena(salaFrente, salaAtras, true));
             }
+            else if (index == 52)
+                {
+                StartCoroutine(TransicaoCena(salaAtras, cozinha, true));
+                }
             else
             {
                 NextLine();
                 NextLinePersonagemFalando();
             }
+
         }
         else
         {
@@ -108,7 +114,7 @@ void Update()
             yield return new WaitForSeconds(textSpeed);
         }
     }
-        IEnumerator TypeLine2() // transforma as frases em caracteres para que tenha o efeito de ir de letra por letra dentro do dialogo.
+        IEnumerator TypeLine2()
     {
         foreach (char c in personagemFalando[indexPersonagem].ToCharArray())
         {
