@@ -780,6 +780,11 @@ MonoBehaviour:
   - "N\xE3o tenho certeza."
   - "\xC9 mesmo? Mas s\xE3o t\xE3o lindos, pense um pouco a respeito"
   - Certo..
+  - "Agora vai l\xE1, antes que o intervalo acabe."
+  - "M\xE3e, Pai, cheguei!"
+  - Boa tarde, filha. Como foi a escola?
+  - "Boa tarde m\xE3e, foi boa."
+  - Que bom.
   personagemFalando:
   - AURORA
   - "M\xC3E"
@@ -832,6 +837,11 @@ MonoBehaviour:
   - PROFESSORA
   - AURORA
   - PROFESSORA
+  - PROFESSORA
+  - AURORA
+  - "M\xC3E"
+  - AURORA
+  - "M\xC3E"
   textSpeed: 0.02
   fadeOutAnimacao: {fileID: 930155518}
   fadeInAnimacao: {fileID: 1795003741}
