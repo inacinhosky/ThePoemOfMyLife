@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEditor.Experimental.GraphView;
+using Unity.VisualScripting;
 
 public class Dialogo : MonoBehaviour
 {
@@ -24,6 +25,12 @@ public class Dialogo : MonoBehaviour
     public GameObject background;
     private bool introducaoFeita = false;
     private bool transicaoAcontecendo;
+    [SerializeField]private AudioClip vozAtual;
+    public AudioSource audioSource;
+    public AudioClip vozMae;
+    public AudioClip vozAurora;
+
+    
     void Start()
     {
         caixaDialogo.SetActive(false);
@@ -36,6 +43,15 @@ public class Dialogo : MonoBehaviour
 
 void Update()
 {
+    switch (personagemFalando[indexPersonagem])
+    {
+        case "AURORA":
+            vozAtual = vozAurora;
+            break;
+        case "MÃE":
+            vozAtual = vozMae;
+            break;
+    }
     if (transicaoAcontecendo == true)
     {
         return;
@@ -81,10 +97,11 @@ void Update()
 
                 StartCoroutine(TransicaoCena(salaFrente, salaAtras, true));
             }
-            else if (index == 52)
-                {
+            else if (index == 51)
+            {
                 StartCoroutine(TransicaoCena(salaAtras, cozinha, true));
-                }
+            }
+            
             else
             {
                 NextLine();
@@ -111,7 +128,12 @@ void Update()
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
+            if (char.IsLetter(c))
+            {
+            audioSource.PlayOneShot(vozAtual);
+            }
             yield return new WaitForSeconds(textSpeed);
+            
         }
     }
         IEnumerator TypeLine2()
