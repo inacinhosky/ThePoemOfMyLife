@@ -4,6 +4,8 @@ using TMPro;
 using System;
 using UnityEditor.Experimental.GraphView;
 using Unity.VisualScripting;
+using UnityEngine.UI;
+using Unity.UI;
 
 public class Dialogo : MonoBehaviour
 {
@@ -29,6 +31,8 @@ public class Dialogo : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip vozMae;
     public AudioClip vozAurora;
+    public AudioClip vozMarisa;
+    public Image aurora;
 
     
     void Start()
@@ -50,6 +54,9 @@ void Update()
             break;
         case "MÃE":
             vozAtual = vozMae;
+            break;
+        case "MARISA":
+            vozAtual = vozMarisa;
             break;
     }
     if (transicaoAcontecendo == true)
@@ -120,9 +127,19 @@ void Update()
     {
         index = 0;
         indexPersonagem = 0;
+        DestacarPersonagem(personagemFalando[indexPersonagem]);
         StartCoroutine(TypeLine());
         StartCoroutine(TypeLine2());
     }
+    void DestacarPersonagem(string personagem)
+{
+    aurora.color = Color.gray;
+
+    if (personagem == "AURORA")
+    {
+        aurora.color = Color.white;
+    }
+}
     IEnumerator TypeLine() // transforma as frases em caracteres para que tenha o efeito de ir de letra por letra dentro do dialogo.
     {
         foreach (char c in lines[index].ToCharArray())
@@ -176,6 +193,7 @@ void Update()
         if (indexPersonagem < personagemFalando.Length - 1)
         {
             indexPersonagem++;
+            DestacarPersonagem(personagemFalando[indexPersonagem]);
             personagemFalandoComponent.text = string.Empty;
             StartCoroutine(TypeLine2());
         }
