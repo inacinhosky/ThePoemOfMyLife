@@ -32,7 +32,10 @@ public class Dialogo : MonoBehaviour
     public AudioClip vozMae;
     public AudioClip vozAurora;
     public AudioClip vozMarisa;
+    public GameObject personagens;
     public Image aurora;
+    public Image mae;
+    public Image marisa;
 
     
     void Start()
@@ -43,6 +46,8 @@ public class Dialogo : MonoBehaviour
         fadeInAnimacao.SetActive(false);
         quarto.SetActive(false);
         personagemFalandoComponent.text = string.Empty;
+        mae.enabled = false;
+        marisa.enabled = false;
     }
 
 void Update()
@@ -81,12 +86,13 @@ void Update()
             else if (index == 3)
             {
                 StartCoroutine(TransicaoCena(quarto, cozinha, true));
-
+                mae.enabled = true;
             }
             else if (index == 10)
             {
                 StartCoroutine(TransicaoCena(cozinha, corredor, true));
-
+                mae.enabled = false;
+                marisa.enabled = true;
             }
             else if (index == 28)
             {
@@ -134,10 +140,20 @@ void Update()
     void DestacarPersonagem(string personagem)
 {
     aurora.color = Color.gray;
+    mae.color = Color.gray;
+    marisa.color = Color.gray;
 
     if (personagem == "AURORA")
     {
         aurora.color = Color.white;
+    }
+    if (personagem == "MÃE")
+    {
+        mae.color = Color.white;
+    }
+    if (personagem == "MARISA")
+    {
+        marisa.color = Color.white;
     }
 }
     IEnumerator TypeLine() // transforma as frases em caracteres para que tenha o efeito de ir de letra por letra dentro do dialogo.
@@ -207,6 +223,8 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
     caixaDialogo.SetActive(false);
 
     transicaoAcontecendo = true;
+    personagens.SetActive(false);
+    
     fadeInAnimacao.SetActive(true);
 
     yield return new WaitForSeconds(2.5f);
@@ -219,6 +237,7 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
 
     yield return new WaitForSeconds(2.5f);
 
+    personagens.SetActive(true);
     NextLine();
     NextLinePersonagemFalando();
 
