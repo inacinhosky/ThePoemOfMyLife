@@ -22,11 +22,15 @@ public class GameControllerMinigame : MonoBehaviour
         pessoasFrutas++;
         if (pessoasFrutas == pessoasTotal)
         {
-
-            Debug.Log("Ganhou");
-            dialogo.continuarDialogo();
-            gameController.SetActive(false);
-            Timer.SetActive(false);
+            Vitoria();
+            //Debug.Log("Ganhou");
+            //dialogo.continuarDialogo();
+            //gameController.SetActive(false);
+            //Timer.SetActive(false);
         }    
+    }
+        public static void Vitoria() // mudar para a cena de game over depois.
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Vitoria");
     }
 }

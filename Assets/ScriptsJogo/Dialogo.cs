@@ -236,7 +236,14 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
     fadeInAnimacao.SetActive(false);
 
     yield return new WaitForSeconds(2.5f);
-
+    if (mostrarDialogoDepois)
+    {
+    caixaDialogo.SetActive(true);
+    }
+    else
+    {
+            yield break;
+    }
     personagens.SetActive(true);
     NextLine();
     NextLinePersonagemFalando();
@@ -245,10 +252,7 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
     fadeInAnimacao.SetActive(false);
     fadeOutAnimacao.SetActive(false);
 
-    if (mostrarDialogoDepois)
-    {
-        caixaDialogo.SetActive(true);
-    }
+
 }
     public void continuarDialogo()
     {
