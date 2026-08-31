@@ -36,6 +36,7 @@ public class Dialogo : MonoBehaviour
     public Image aurora;
     public Image mae;
     public Image marisa;
+    public Image professora;
 
     
     void Start()
@@ -48,6 +49,7 @@ public class Dialogo : MonoBehaviour
         personagemFalandoComponent.text = string.Empty;
         mae.enabled = false;
         marisa.enabled = false;
+        professora.enabled = false;
     }
 
 void Update()
@@ -97,7 +99,8 @@ void Update()
             else if (index == 28)
             {
                 StartCoroutine(TransicaoCena(corredor, salaAtras, true));
-
+                marisa.enabled = true;
+                professora.enabled = true;
             }
             else if (index == 41) 
             {
@@ -142,6 +145,7 @@ void Update()
     aurora.color = Color.gray;
     mae.color = Color.gray;
     marisa.color = Color.gray;
+    professora.color = Color.gray;
 
     if (personagem == "AURORA")
     {
@@ -154,6 +158,10 @@ void Update()
     if (personagem == "MARISA")
     {
         marisa.color = Color.white;
+    }
+    if (personagem == "PROFESSORA")
+    {
+        professora.color = Color.white;
     }
 }
     IEnumerator TypeLine() // transforma as frases em caracteres para que tenha o efeito de ir de letra por letra dentro do dialogo.
@@ -242,7 +250,7 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
     }
     else
     {
-            yield break;
+    yield break;
     }
     personagens.SetActive(true);
     NextLine();
