@@ -2676,12 +2676,12 @@ RectTransform:
   - {fileID: 241817110}
   - {fileID: 1292990967}
   - {fileID: 598893141}
+  - {fileID: 106786592}
   - {fileID: 1795003742}
   - {fileID: 930155519}
   - {fileID: 310491027}
   - {fileID: 1542186978}
   - {fileID: 208082107}
-  - {fileID: 106786592}
   - {fileID: 1448602035}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
