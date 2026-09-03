@@ -2,10 +2,8 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using System;
-using UnityEditor.Experimental.GraphView;
 using Unity.VisualScripting;
 using UnityEngine.UI;
-using Unity.UI;
 
 public class Dialogo : MonoBehaviour
 {
@@ -100,7 +98,6 @@ void Update()
             {
                 StartCoroutine(TransicaoCena(corredor, salaAtras, true));
                 marisa.enabled = true;
-                professora.enabled = true;
             }
             else if (index == 41) 
             {
