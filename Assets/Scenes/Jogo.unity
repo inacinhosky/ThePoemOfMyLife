@@ -620,15 +620,15 @@ PrefabInstance:
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[0]'
       value: 
-      objectReference: {fileID: 2941931479446068323, guid: ee6b8771232c61142a122cdcb7d4838d, type: 3}
+      objectReference: {fileID: -1988868544207996421, guid: c69da455e9299014f8c8dbeaf37d5e34, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[1]'
       value: 
-      objectReference: {fileID: -537358775413745403, guid: ecd89bcd9b2e6574b950bae8d5b00f08, type: 3}
+      objectReference: {fileID: 8590685300643562096, guid: eb709a1a8a7a7c745b2be0ba7eaa6747, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 42fee60c924a9b744a239c76c55c434b, type: 3}
+      objectReference: {fileID: 4621662574196686053, guid: 747c30402673c4542affb0abc1f65bdc, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: gameControllerMinigame
       value: 
@@ -1145,15 +1145,15 @@ PrefabInstance:
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[0]'
       value: 
-      objectReference: {fileID: 2941931479446068323, guid: ee6b8771232c61142a122cdcb7d4838d, type: 3}
+      objectReference: {fileID: -1988868544207996421, guid: c69da455e9299014f8c8dbeaf37d5e34, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[1]'
       value: 
-      objectReference: {fileID: -537358775413745403, guid: ecd89bcd9b2e6574b950bae8d5b00f08, type: 3}
+      objectReference: {fileID: 8590685300643562096, guid: eb709a1a8a7a7c745b2be0ba7eaa6747, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 42fee60c924a9b744a239c76c55c434b, type: 3}
+      objectReference: {fileID: 4621662574196686053, guid: 747c30402673c4542affb0abc1f65bdc, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: gameControllerMinigame
       value: 
@@ -1368,8 +1368,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -426.00995, y: 16.585005}
-  m_SizeDelta: {x: 91.98, y: 348.16}
+  m_AnchoredPosition: {x: -426.00995, y: -29}
+  m_SizeDelta: {x: 155.44, y: 498.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &800960812
 GameObject:
@@ -1836,15 +1836,15 @@ PrefabInstance:
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[0]'
       value: 
-      objectReference: {fileID: 2941931479446068323, guid: ee6b8771232c61142a122cdcb7d4838d, type: 3}
+      objectReference: {fileID: -1988868544207996421, guid: c69da455e9299014f8c8dbeaf37d5e34, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[1]'
       value: 
-      objectReference: {fileID: -537358775413745403, guid: ecd89bcd9b2e6574b950bae8d5b00f08, type: 3}
+      objectReference: {fileID: 8590685300643562096, guid: eb709a1a8a7a7c745b2be0ba7eaa6747, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: 'frutas.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 42fee60c924a9b744a239c76c55c434b, type: 3}
+      objectReference: {fileID: 4621662574196686053, guid: 747c30402673c4542affb0abc1f65bdc, type: 3}
     - target: {fileID: 5031535551426397063, guid: 1f0232e6fcdf5bb4a9132527dacda14e, type: 3}
       propertyPath: gameControllerMinigame
       value: 
@@ -2802,14 +2802,14 @@ RectTransform:
   m_GameObject: {fileID: 2048482919}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3050001, y: 1.7437501, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 106786592}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -212, y: 16.58}
+  m_AnchoredPosition: {x: -231, y: -47}
   m_SizeDelta: {x: 188.83, y: 348.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2048482921
@@ -2832,7 +2832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7776122443050138738, guid: 1c9c63d1a88343d4d925a58df88ad33a, type: 3}
+  m_Sprite: {fileID: -8458095712485075781, guid: c0508331680045c4d9b7bcab1e9c8395, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
