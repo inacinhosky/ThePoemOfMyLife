@@ -7,6 +7,7 @@ public class GameControllerMinigame : MonoBehaviour
     public int pessoasFrutas;
     public GameObject gameController;
     public GameObject Timer;
+    private bool jaFoi = false;
     void Start()
     {
         pessoasTotal = transform.childCount;
@@ -20,17 +21,13 @@ public class GameControllerMinigame : MonoBehaviour
     public void clicouNaPessoa()
     {
         pessoasFrutas++;
-        if (pessoasFrutas == pessoasTotal)
+        if (pessoasFrutas == pessoasTotal && !jaFoi)
         {
-            Vitoria();
-            //Debug.Log("Ganhou");
-            //dialogo.continuarDialogo();
-            //gameController.SetActive(false);
-            //Timer.SetActive(false);
+            jaFoi = true;
+            Debug.Log("Ganhou");
+            dialogo.continuarDialogo();
+            gameController.SetActive(false);
+            Timer.SetActive(false);
         }    
-    }
-        public static void Vitoria() // mudar para a cena de game over depois.
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Vitoria");
     }
 }

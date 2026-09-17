@@ -12,8 +12,8 @@ public class Dialogo : MonoBehaviour
     public string[] lines;
     public string[] personagemFalando;
     public float textSpeed;
-    private int index;
-    private int indexPersonagem;
+    [SerializeField]private int index;
+    [SerializeField]private int indexPersonagem;
     public GameObject fadeOutAnimacao;
     public GameObject fadeInAnimacao;
     public GameObject quarto;
@@ -183,7 +183,7 @@ void Update()
         }
     }
 
-    IEnumerator Introdução() // Corrotina para o inicio de tela preta.
+    IEnumerator Introdução() // corrotina para o inicio de tela preta.
     {
         transicaoAcontecendo = true;
         quarto.SetActive(true);
@@ -196,7 +196,7 @@ void Update()
         fadeOutAnimacao.SetActive(false);
     }
 
-    void NextLine() // função feita para ir para a próxima linha
+    void NextLine()
     {
         if (index < lines.Length - 1)
         {
@@ -209,7 +209,7 @@ void Update()
             gameObject.SetActive(false);
         }
     }
-        void NextLinePersonagemFalando() // função feita para ir para a próxima linha
+        void NextLinePersonagemFalando()
     {
         if (indexPersonagem < personagemFalando.Length - 1)
         {
@@ -262,7 +262,8 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
     public void continuarDialogo()
     {
         caixaDialogo.SetActive(true);
-        enabled = true;
         NextLine();
+        NextLinePersonagemFalando();
+        enabled = true;
     }
 }
