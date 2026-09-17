@@ -868,21 +868,23 @@ MonoBehaviour:
   - AURORA
   - MARISA
   - PROFESSORA
-  - PROFESSORA
-  - AURORA
-  - AURORA
-  - PROFESSORA
-  - PROFESSORA
   - AURORA
   - PROFESSORA
   - AURORA
+  - AURORA
   - PROFESSORA
+  - PROFESSORA
+  - AURORA
+  - PROFESSORA
+  - AURORA
   - PROFESSORA
   - AURORA
   - "M\xC3E"
   - AURORA
   - "M\xC3E"
   textSpeed: 0.02
+  index: 0
+  indexPersonagem: 0
   fadeOutAnimacao: {fileID: 930155518}
   fadeInAnimacao: {fileID: 1795003741}
   quarto: {fileID: 93878236}
