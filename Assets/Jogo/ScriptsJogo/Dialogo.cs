@@ -24,7 +24,7 @@ public class Dialogo : MonoBehaviour
     public GameObject caixaDialogo;
     public GameObject background;
     private bool introducaoFeita = false;
-    private bool transicaoAcontecendo;
+    [SerializeField]private bool transicaoAcontecendo;
     [SerializeField]private AudioClip vozAtual;
     public AudioSource audioSource;
     public AudioClip vozMae;
@@ -70,7 +70,7 @@ void Update()
     }
     if (Input.GetMouseButtonDown(0))
     {
-        if (!caixaDialogo.activeSelf)
+        if (!caixaDialogo.activeSelf && index == 0)
         {
             caixaDialogo.SetActive(true);
             StartDialogue();
@@ -101,18 +101,23 @@ void Update()
             }
             else if (index == 41) 
             {
+                index = 42;
+                indexPersonagem = 42;
                 StartCoroutine(TransicaoCena(salaAtras, salaFrente, false));
-                
 
             }
             else if (index == 44) // lembrar de botar o som de palmas nesses 3 pontinhos. 
             {
 
                 StartCoroutine(TransicaoCena(salaFrente, salaAtras, true));
+                marisa.enabled = false;
+                professora.enabled = true;
             }
             else if (index == 51)
             {
                 StartCoroutine(TransicaoCena(salaAtras, cozinha, true));
+                mae.enabled = true;
+                professora.enabled = false;
             }
             
             else
@@ -241,23 +246,21 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
     fadeInAnimacao.SetActive(false);
 
     yield return new WaitForSeconds(2.5f);
+    fadeOutAnimacao.SetActive(false);
+    fadeInAnimacao.SetActive(false);
     if (mostrarDialogoDepois)
     {
     caixaDialogo.SetActive(true);
     }
     else
     {
+    transicaoAcontecendo = false;
     yield break;
     }
+    transicaoAcontecendo = false;
     personagens.SetActive(true);
     NextLine();
-    NextLinePersonagemFalando();
-
-    transicaoAcontecendo = false;
-    fadeInAnimacao.SetActive(false);
-    fadeOutAnimacao.SetActive(false);
-
-
+    NextLinePersonagemFalando(); 
 }
     public void continuarDialogo()
     {

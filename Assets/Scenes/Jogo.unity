@@ -810,6 +810,7 @@ MonoBehaviour:
   - Pode confia!
   - Sua vez, Aurora.
   - finalmente...
+  - finalmente...
   - "Perfeito! Pode se sentar, mas ser\xE1 que eu posso conversar com voc\xEA depois?"
   - Ahn? Claro
   - "Licen\xE7a, voc\xEA queria falar comigo?"
@@ -869,6 +870,7 @@ MonoBehaviour:
   - MARISA
   - PROFESSORA
   - AURORA
+  - AURORA
   - PROFESSORA
   - AURORA
   - AURORA
@@ -894,6 +896,7 @@ MonoBehaviour:
   salaFrente: {fileID: 598893138}
   caixaDialogo: {fileID: 1448602034}
   background: {fileID: 1542186977}
+  transicaoAcontecendo: 0
   vozAtual: {fileID: 0}
   audioSource: {fileID: 310491030}
   vozMae: {fileID: 8300000, guid: 1cf67a9ca4f62e942a6fb266913a270a, type: 3}
@@ -2811,7 +2814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -231, y: -47}
+  m_AnchoredPosition: {x: -385, y: -47}
   m_SizeDelta: {x: 188.83, y: 348.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2048482921
