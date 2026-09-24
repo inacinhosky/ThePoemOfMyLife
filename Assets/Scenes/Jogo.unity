@@ -885,6 +885,7 @@ MonoBehaviour:
   - AURORA
   - "M\xC3E"
   textSpeed: 0.02
+  minigameAcontecendo: 0
   index: 0
   indexPersonagem: 0
   fadeOutAnimacao: {fileID: 930155518}
