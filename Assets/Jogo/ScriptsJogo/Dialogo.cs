@@ -12,6 +12,7 @@ public class Dialogo : MonoBehaviour
     public string[] lines;
     public string[] personagemFalando;
     public float textSpeed;
+    [SerializeField] private bool minigameAcontecendo;
     [SerializeField]private int index;
     [SerializeField]private int indexPersonagem;
     public GameObject fadeOutAnimacao;
@@ -48,6 +49,7 @@ public class Dialogo : MonoBehaviour
         mae.enabled = false;
         marisa.enabled = false;
         professora.enabled = false;
+        minigameAcontecendo = false;
     }
 
 void Update()
@@ -70,13 +72,13 @@ void Update()
     }
     if (Input.GetMouseButtonDown(0))
     {
-        if (!caixaDialogo.activeSelf && index == 0)
+        if (!caixaDialogo.activeSelf && index == 0 && minigameAcontecendo == false)
         {
             caixaDialogo.SetActive(true);
             StartDialogue();
             return;
         }
-        if (textComponent.text == lines[index])
+        if (textComponent.text == lines[index] && minigameAcontecendo == false)
         {
             if (!introducaoFeita && index == 0)
             {
@@ -103,6 +105,7 @@ void Update()
             {
                 index = 42;
                 indexPersonagem = 42;
+                minigameAcontecendo = true;
                 StartCoroutine(TransicaoCena(salaAtras, salaFrente, false));
 
             }
@@ -129,8 +132,12 @@ void Update()
         }
         else
         {
-            StopAllCoroutines();
-            textComponent.text = lines[index];
+            if (minigameAcontecendo == false)
+            {
+                StopAllCoroutines();
+                textComponent.text = lines[index];
+                personagemFalandoComponent.text = personagemFalando[indexPersonagem];
+            }
         }
     }
 }
@@ -264,6 +271,7 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
 }
     public void continuarDialogo()
     {
+        minigameAcontecendo = false;
         caixaDialogo.SetActive(true);
         NextLine();
         NextLinePersonagemFalando();
