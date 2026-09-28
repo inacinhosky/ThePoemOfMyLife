@@ -109,19 +109,25 @@ void Update()
                 StartCoroutine(TransicaoCena(salaAtras, salaFrente, false));
 
             }
-            else if (index == 44) // lembrar de botar o som de palmas nesses 3 pontinhos. 
+            else if (index == 44)
             {
 
                 StartCoroutine(TransicaoCena(salaFrente, salaAtras, true));
                 marisa.enabled = false;
                 professora.enabled = true;
             }
-            else if (index == 51)
+            else if (index == 52)
             {
                 StartCoroutine(TransicaoCena(salaAtras, cozinha, true));
                 mae.enabled = true;
                 professora.enabled = false;
             }
+            else if (index == 61) // som de porta abrindo + som de se jogando na cama/caindo
+            {
+                StartCoroutine(TransicaoCena(cozinha, quarto, true));
+                mae.enabled = false;
+            }
+            // no index 62 colocar um som de toque de telefone
             
             else
             {

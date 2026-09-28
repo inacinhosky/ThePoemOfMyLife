@@ -826,6 +826,26 @@ MonoBehaviour:
   - Boa tarde, filha. Como foi a escola?
   - "Boa tarde m\xE3e, foi boa."
   - Que bom.
+  - "Ai m\xE3e, minha professora me chamou para participar de um Slam, ser\xE1 que
+    eu deveria ir?"
+  - "Por que n\xE3o? \xC9 uma decis\xE3o sua."
+  - "N\xE3o sei."
+  - "N\xE3o posso escolher por voc\xEA. "
+  - "Voc\xEA tem raz\xE3o, m\xE3e."
+  - Talvez eu devesse chamar a Marisa.
+  - Aurora!! Tudo bem miga?
+  - "Oi Marisa, a professora me convidou para um Slam e eu n\xE3o sei se deveria
+    ir. Tem como voc\xEA... tipo, da uma m\xE3ozinha?"
+  - Claro! To sempre aqui...
+  - "S\xF3 que... o que \xE9 um Slam?"
+  - "\xC9 uma competi\xE7\xE3o de poesia, resumidamente"
+  - "Parece legal, qual \xE9 o problema?"
+  - Bem...eu tenho medo
+  - "U\xE9? Medo?"
+  - "Sim, eu tenho medo de ir l\xE1 na frente, travar e acabar errado, eu sei que
+    sou boa, sei que sei escrever, mas na hora, eu tremo, e-eu-"
+  - "Eu n\xE3o sei o que fazer! Eu tento ignorar as pessoas, mas l\xE1 no fundo eu
+    sei que elas est\xE3o l\xE1, eu to com medo, Marisa"
   personagemFalando:
   - AURORA
   - "M\xC3E"
@@ -884,6 +904,22 @@ MonoBehaviour:
   - "M\xC3E"
   - AURORA
   - "M\xC3E"
+  - AURORA
+  - "M\xC3E"
+  - AURORA
+  - "M\xC3E"
+  - AURORA
+  - AURORA
+  - MARISA
+  - AURORA
+  - MARISA
+  - MARISA
+  - AURORA
+  - MARISA
+  - AURORA
+  - MARISA
+  - AURORA
+  - AURORA
   textSpeed: 0.02
   minigameAcontecendo: 0
   index: 0
