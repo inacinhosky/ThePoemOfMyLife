@@ -127,7 +127,7 @@ void Update()
                 StartCoroutine(TransicaoCena(cozinha, quarto, true));
                 mae.enabled = false;
             }
-            // no index 62 colocar um som de toque de telefone
+            
             
             else
             {
@@ -284,3 +284,6 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
         enabled = true;
     }
 }
+// no index 62 colocar um som de toque de telefone
+// no index 69 separar um texto do outro
+// no index 72 começar o minigame2 
