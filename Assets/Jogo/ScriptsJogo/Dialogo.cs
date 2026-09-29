@@ -31,6 +31,7 @@ public class Dialogo : MonoBehaviour
     public AudioClip vozMae;
     public AudioClip vozAurora;
     public AudioClip vozMarisa;
+    public AudioClip vozProfessora;
     public GameObject personagens;
     public Image aurora;
     public Image mae;
@@ -64,6 +65,9 @@ void Update()
             break;
         case "MARISA":
             vozAtual = vozMarisa;
+            break;
+        case "PROFESSORA":
+            vozAtual = vozProfessora;
             break;
     }
     if (transicaoAcontecendo == true)

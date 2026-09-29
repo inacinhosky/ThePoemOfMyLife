@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3030990003889573820, guid: 7151d8716cc29cb47942751060d05445, type: 3}
+  m_Sprite: {fileID: 8138532480268601653, guid: b546dfa46abb12f4f8c0b2002343c94a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -939,6 +939,7 @@ MonoBehaviour:
   vozMae: {fileID: 8300000, guid: 1cf67a9ca4f62e942a6fb266913a270a, type: 3}
   vozAurora: {fileID: 8300000, guid: ad6bc6cf384fbdd4fb74b29642053129, type: 3}
   vozMarisa: {fileID: 8300000, guid: bbc41034fc4222144a88adf6864ae67c, type: 3}
+  vozProfessora: {fileID: 8300000, guid: bb3a0d1d3da0c2e45a7f111d6b6f5070, type: 3}
   personagens: {fileID: 106786591}
   aurora: {fileID: 330731997}
   mae: {fileID: 642142443}
@@ -2067,7 +2068,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -810523277011214728, guid: 6c79e2a94cec38f4c8b7dd286b1aa2e7, type: 3}
+  m_Sprite: {fileID: 5131126315314523879, guid: a8472376134c7b54badd9ec30ea0b6a2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
