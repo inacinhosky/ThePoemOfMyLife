@@ -937,8 +937,8 @@ MonoBehaviour:
   vozAtual: {fileID: 0}
   audioSource: {fileID: 310491030}
   vozMae: {fileID: 8300000, guid: 1cf67a9ca4f62e942a6fb266913a270a, type: 3}
-  vozAurora: {fileID: 8300000, guid: ad6bc6cf384fbdd4fb74b29642053129, type: 3}
-  vozMarisa: {fileID: 8300000, guid: bbc41034fc4222144a88adf6864ae67c, type: 3}
+  vozAurora: {fileID: 8300000, guid: 303efc83258a27a418f1d18d249327fb, type: 3}
+  vozMarisa: {fileID: 8300000, guid: e81dfb4ed4016794d8d5b382b8127490, type: 3}
   vozProfessora: {fileID: 8300000, guid: bb3a0d1d3da0c2e45a7f111d6b6f5070, type: 3}
   personagens: {fileID: 106786591}
   aurora: {fileID: 330731997}
@@ -958,7 +958,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.202
+  m_Volume: 0.215
   m_Pitch: 1
   Loop: 0
   Mute: 0
