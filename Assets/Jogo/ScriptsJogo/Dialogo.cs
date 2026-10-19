@@ -7,8 +7,9 @@ using UnityEngine.UI;
 
 public class Dialogo : MonoBehaviour
 {
-    public TextMeshProUGUI textComponent;
-    public TextMeshProUGUI personagemFalandoComponent;
+    public ControllerMinigame2 controllerMinigame2;
+    public TextMeshProUGUI textoDialogo;
+    public TextMeshProUGUI personagemFalandoTexto;
     public string[] lines;
     public string[] personagemFalando;
     public float textSpeed;
@@ -24,6 +25,7 @@ public class Dialogo : MonoBehaviour
     public GameObject salaFrente;
     public GameObject caixaDialogo;
     public GameObject background;
+    public GameObject quartoMarisa;
     private bool introducaoFeita = false;
     [SerializeField]private bool transicaoAcontecendo;
     [SerializeField]private AudioClip vozAtual;
@@ -42,11 +44,11 @@ public class Dialogo : MonoBehaviour
     void Start()
     {
         caixaDialogo.SetActive(false);
-        textComponent.text = string.Empty;
+        textoDialogo.text = string.Empty;
         fadeOutAnimacao.SetActive(false);
         fadeInAnimacao.SetActive(false);
         quarto.SetActive(false);
-        personagemFalandoComponent.text = string.Empty;
+        personagemFalandoTexto.text = string.Empty;
         mae.enabled = false;
         marisa.enabled = false;
         professora.enabled = false;
@@ -82,7 +84,7 @@ void Update()
             StartDialogue();
             return;
         }
-        if (textComponent.text == lines[index] && minigameAcontecendo == false)
+        if (textoDialogo.text == lines[index] && minigameAcontecendo == false)
         {
             if (!introducaoFeita && index == 0)
             {
@@ -131,7 +133,20 @@ void Update()
                 StartCoroutine(TransicaoCena(cozinha, quarto, true));
                 mae.enabled = false;
             }
-            
+            else if (index == 71)
+            {
+                StartCoroutine(TransicaoCena(quarto, quartoMarisa, true));
+                marisa.enabled = true;
+                aurora.enabled = false;
+                marisa.GetComponent<RectTransform>().anchoredPosition = new Vector3(4, -50, 0);
+            }
+            else if (index == 72)
+            {
+                minigameAcontecendo = true;
+                textoDialogo.gameObject.SetActive(false);
+                personagemFalandoTexto.gameObject.SetActive(false);
+                controllerMinigame2.IniciarMinigame();
+            }
             
             else
             {
@@ -145,8 +160,8 @@ void Update()
             if (minigameAcontecendo == false)
             {
                 StopAllCoroutines();
-                textComponent.text = lines[index];
-                personagemFalandoComponent.text = personagemFalando[indexPersonagem];
+                textoDialogo.text = lines[index];
+                personagemFalandoTexto.text = personagemFalando[indexPersonagem];
             }
         }
     }
@@ -187,7 +202,7 @@ void Update()
     {
         foreach (char c in lines[index].ToCharArray())
         {
-            textComponent.text += c;
+            textoDialogo.text += c;
             if (char.IsLetter(c))
             {
             audioSource.PlayOneShot(vozAtual);
@@ -200,7 +215,7 @@ void Update()
     {
         foreach (char c in personagemFalando[indexPersonagem].ToCharArray())
         {
-            personagemFalandoComponent.text += c;
+            personagemFalandoTexto.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
     }
@@ -223,7 +238,7 @@ void Update()
         if (index < lines.Length - 1)
         {
             index++;
-            textComponent.text = string.Empty;
+            textoDialogo.text = string.Empty;
             StartCoroutine(TypeLine());
         }
         else
@@ -237,7 +252,7 @@ void Update()
         {
             indexPersonagem++;
             DestacarPersonagem(personagemFalando[indexPersonagem]);
-            personagemFalandoComponent.text = string.Empty;
+            personagemFalandoTexto.text = string.Empty;
             StartCoroutine(TypeLine2());
         }
         else
@@ -267,12 +282,12 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
     fadeInAnimacao.SetActive(false);
     if (mostrarDialogoDepois)
     {
-    caixaDialogo.SetActive(true);
+        caixaDialogo.SetActive(true);
     }
     else
     {
-    transicaoAcontecendo = false;
-    yield break;
+        transicaoAcontecendo = false;
+        yield break;
     }
     transicaoAcontecendo = false;
     personagens.SetActive(true);
@@ -283,10 +298,13 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
     {
         minigameAcontecendo = false;
         caixaDialogo.SetActive(true);
+        textoDialogo.gameObject.SetActive(true);
+        personagemFalandoTexto.gameObject.SetActive(true);
         NextLine();
         NextLinePersonagemFalando();
         enabled = true;
     }
+    
 }
 // no index 62 colocar um som de toque de telefone
 // no index 69 separar um texto do outro
