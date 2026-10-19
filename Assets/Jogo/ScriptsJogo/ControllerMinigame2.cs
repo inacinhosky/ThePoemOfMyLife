@@ -24,8 +24,8 @@ public class ControllerMinigame2 : MonoBehaviour
     private string[] perguntas =
     {
         "Como posso ajudar a Aurora?",
-        "E se a julgarem?",
-        "Além disso...."
+        "Além disso....",
+        "E se a julgarem?"
         
     };
 
@@ -55,6 +55,7 @@ public class ControllerMinigame2 : MonoBehaviour
 
     public void IniciarMinigame()
     {
+        Object.FindFirstObjectByType<Dialogo>().marisa.enabled = false;
         erros = 0;
         perguntaAtual = 0;
 
@@ -104,13 +105,8 @@ public class ControllerMinigame2 : MonoBehaviour
 
     void Vitoria()
     {
-        //escolhasMinigame2.SetActive(false);
-        //Debug.Log("GG");
-        //Object.FindFirstObjectByType<Dialogo>().continuarDialogo();
-        VitoriaCena();
-    }
-    public static void VitoriaCena()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Vitoria");
+        escolhasMinigame2.SetActive(false);
+        Debug.Log("GG");
+        Object.FindFirstObjectByType<Dialogo>().continuarDialogo();
     }
 }

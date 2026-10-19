@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 1c9c63d1a88343d4d925a58df88ad33a
+guid: dab0237cb974ad5409ae9720b8aa55c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7776122443050138738
-    second: Professora_0
+      213: -1210355885656391799
+    second: "Bal\xE3oPensamento_0"
+  - first:
+      213: 7875910924008864017
+    second: "Bal\xE3oPensamento_1"
+  - first:
+      213: -9049555538615180135
+    second: "Bal\xE3oPensamento_2"
+  - first:
+      213: -3904229205266445924
+    second: "Bal\xE3oPensamento_3"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +148,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Professora_0
+      name: "Bal\xE3oPensamento_0"
       rect:
         serializedVersion: 2
-        x: 698
-        y: 106
-        width: 488
-        height: 818
+        x: 389
+        y: 60
+        width: 1130
+        height: 963
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e83cd0476d9a51490800000000000000
-      internalID: -7776122443050138738
+      spriteID: 98fb5a71cb3f33fe0800000000000000
+      internalID: -1210355885656391799
       vertices: []
       indices: 
       edges: []
@@ -164,7 +173,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 75df9a3272bc08c46bc7926852484ee9
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +183,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Professora_0: -7776122443050138738
+      "Bal\xE3oPensamento_0": -1210355885656391799
+      "Bal\xE3oPensamento_1": 7875910924008864017
+      "Bal\xE3oPensamento_2": -9049555538615180135
+      "Bal\xE3oPensamento_3": -3904229205266445924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

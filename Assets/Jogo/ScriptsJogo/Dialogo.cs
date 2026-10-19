@@ -21,6 +21,7 @@ public class Dialogo : MonoBehaviour
     public GameObject quarto;
     public GameObject cozinha;
     public GameObject corredor;
+    public GameObject frenteSlam;
     public GameObject salaAtras;
     public GameObject salaFrente;
     public GameObject caixaDialogo;
@@ -143,11 +144,21 @@ void Update()
             else if (index == 72)
             {
                 minigameAcontecendo = true;
-                textoDialogo.gameObject.SetActive(false);
+                caixaDialogo.SetActive(false);
                 personagemFalandoTexto.gameObject.SetActive(false);
                 controllerMinigame2.IniciarMinigame();
             }
-            
+            else if (index == 73)
+            {
+                    marisa.enabled = true;
+            }
+            else if (index == 74)
+            {
+                 StartCoroutine(TransicaoCena(quartoMarisa, frenteSlam, true));
+                 marisa.enabled = false;
+                 
+            }
+
             else
             {
                 NextLine();
@@ -308,4 +319,3 @@ IEnumerator TransicaoCena(GameObject cenarioAtual, GameObject novoCenario, bool 
 }
 // no index 62 colocar um som de toque de telefone
 // no index 69 separar um texto do outro
-// no index 72 começar o minigame2 
