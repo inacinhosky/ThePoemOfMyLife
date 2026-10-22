@@ -852,6 +852,11 @@ MonoBehaviour:
   - "Senhoras e senhores!! Sejam muito bem-vindos ao Slam Municipal de S\xE3o Paulo!
     Aqui voc\xEA vai encontrar os melhores poetas e poetisas de toda a cidade!! Em
     cerca de 10 minutos vamos come\xE7ar as apresenta\xE7\xF5es dos poemas!"
+  - AAAAAH! Que nervosa que eu to
+  - "Nem \xE9 voc\xEA que vai apresentar"
+  - Poxa, mas eu ainda fico nervosa
+  - "Aten\xE7\xE3o, por favor, Aten\xE7\xE3o aqui, o Slam est\xE1 preste a come\xE7ar.
+    E como primeira competidora, temos Aurora Almeida"
   personagemFalando:
   - AURORA
   - "M\xC3E"
@@ -925,6 +930,10 @@ MonoBehaviour:
   - AURORA
   - MARISA
   - AURORA
+  - AURORA
+  - MARISA
+  - NARRADOR
+  - MARISA
   - AURORA
   - MARISA
   - NARRADOR
