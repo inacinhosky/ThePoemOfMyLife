@@ -150,13 +150,9 @@ void Update()
             }
             else if (index == 73)
             {
-                    marisa.enabled = true;
-            }
-            else if (index == 74)
-            {
-                 StartCoroutine(TransicaoCena(quartoMarisa, frenteSlam, true));
-                 marisa.enabled = false;
-                 
+                StartCoroutine(TransicaoCena(quartoMarisa, frenteSlam, true));
+                marisa.enabled = false;
+
             }
 
             else

@@ -1964,10 +1964,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: abcdefghijklmnopqrstuvwxyz
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 042b1e0b1a9c0e548b654bbdbc97b9a4, type: 2}
-  m_sharedMaterial: {fileID: 2992239873658568137, guid: 042b1e0b1a9c0e548b654bbdbc97b9a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d74096b99cce3bd4fa99c660f7f52785, type: 2}
+  m_sharedMaterial: {fileID: 6279636978426153250, guid: d74096b99cce3bd4fa99c660f7f52785, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2489,8 +2489,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -187.73262, y: 52}
-  m_SizeDelta: {x: 248.25, y: 25.36}
+  m_AnchoredPosition: {x: -195.2, y: 51.5}
+  m_SizeDelta: {x: 241.72, y: 25.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1343114455
 MonoBehaviour:
@@ -2514,8 +2514,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: COMIC SANS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dee7b5110e59560458ad65fd29869b12, type: 2}
-  m_sharedMaterial: {fileID: -7826004846116957812, guid: dee7b5110e59560458ad65fd29869b12, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 972d0175f2610a44ba6a09055851d08d, type: 2}
+  m_sharedMaterial: {fileID: -4693077138900349610, guid: 972d0175f2610a44ba6a09055851d08d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

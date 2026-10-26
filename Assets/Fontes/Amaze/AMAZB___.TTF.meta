@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 15559b1e06d89814ab58d6fa4037943f
+guid: 72c4b29929f0214489c3f7e0aa7f9485
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Papernotes
+  - Amaze
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

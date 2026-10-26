@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 107c2463c52e5f64fa2b651aa9c89c26
+guid: 8efc447765874e448991717fca9a5dcc
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - KG Perfect Penmanship
+  - Dancing Script
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
