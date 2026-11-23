@@ -2,13 +2,23 @@ using UnityEngine;
 
 public class ControllerMinigame3 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public string[] frases;
+    private string[] palavrasEmbaralhadas;
+
+    private string[] palavrasCorreta;
+    private int indexFraseAtual = 0;
     void Start()
     {
-        
+        palavrasEmbaralhadas = frases[indexFraseAtual].Split(' ');
+        palavrasCorreta = palavrasEmbaralhadas;
+        for (int i = 0; i < palavrasEmbaralhadas.Length; i++)
+        {
+            string temporaria;
+            temporaria = palavrasEmbaralhadas[Random.Range(0, palavrasEmbaralhadas.Length)];
+            int posicaoAleatoria = Random.Range(0, palavrasEmbaralhadas.Length);
+            palavrasEmbaralhadas[posicaoAleatoria] = temporaria;
+        }
     }
-
-    // Update is called once per frame
     void Update()
     {
         
