@@ -1226,8 +1226,8 @@ RectTransform:
   m_Children:
   - {fileID: 1390297688}
   - {fileID: 1532912660}
-  - {fileID: 584620317}
   - {fileID: 378270825}
+  - {fileID: 584620317}
   m_Father: {fileID: 1852020224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2893,6 +2893,9 @@ MonoBehaviour:
   - "essa frase \xE9 um teste"
   - 
   - 
+  botaoPalavraPrefab: {fileID: 6006467196541597151, guid: 64e44fc14b5b38d439d5270a39bc31b4, type: 3}
+  areaPalavras: {fileID: 378270825}
+  areaFrase: {fileID: 584620317}
 --- !u!1 &1437000300
 GameObject:
   m_ObjectHideFlags: 0
