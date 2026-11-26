@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class Dialogo : MonoBehaviour
 {
     public ControllerMinigame2 controllerMinigame2;
+    public ControllerMinigame3 controllerMinigame3;
+    public GameObject controllerMinigame3Objeto;
     public TextMeshProUGUI textoDialogo;
     public TextMeshProUGUI personagemFalandoTexto;
     public string[] lines;
@@ -152,7 +154,14 @@ void Update()
             {
                 StartCoroutine(TransicaoCena(quartoMarisa, frenteSlam, true));
                 marisa.enabled = false;
-
+            }
+            else if (index == 78)
+            {
+            minigameAcontecendo = true;
+            controllerMinigame3Objeto.SetActive(true);
+            caixaDialogo.SetActive(false);
+            personagemFalandoTexto.gameObject.SetActive(false);
+            controllerMinigame3.IniciarMinigame();
             }
 
             else

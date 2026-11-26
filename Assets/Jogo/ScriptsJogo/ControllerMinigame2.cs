@@ -105,7 +105,6 @@ public class ControllerMinigame2 : MonoBehaviour
 
     void Vitoria()
     {
-        SceneManager.LoadSceneAsync("Vitoria");
         escolhasMinigame2.SetActive(false);
         Debug.Log("GG");
         Object.FindFirstObjectByType<Dialogo>().continuarDialogo();
