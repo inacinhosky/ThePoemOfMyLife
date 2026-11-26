@@ -413,9 +413,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Muitas coisas ainda v\xE3o mudar e o plano \xE9 ajustar os designs que
-    n\xE3o parecem certos no jogo, ao mesmo tempo adicionando cada vez mais gamefeel
-    e gamejuice no jogo."
+  m_text: "o terceiro minigame com o final j\xE1 est\xE1 feito, falta arrumar alguns
+    bugs e ajustar sprites em geral, at\xE9 segunda feira tudo vai estar feito para
+    uma \xF3tima apresenta\xE7\xE3o."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d704b56f2c08b004cb32e9b516dba89a, type: 2}
   m_sharedMaterial: {fileID: 6407586455859672765, guid: d704b56f2c08b004cb32e9b516dba89a, type: 2}
@@ -630,7 +630,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Obrigado por jogar a beta!!
+  m_text: "at\xE9 aqui que o jogo vai"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d704b56f2c08b004cb32e9b516dba89a, type: 2}
   m_sharedMaterial: {fileID: 6407586455859672765, guid: d704b56f2c08b004cb32e9b516dba89a, type: 2}
